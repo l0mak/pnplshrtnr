@@ -14,7 +14,7 @@ class HomeView(View):
     def get(self, request, *args, **kwargs):
         url_form = SubmitURLForm()
         content = {
-            'title': "Pnpl Shrtnr",
+            'title': "Pnpl URL Shrtnr",
             'form': url_form
         }
         return render(request, 'shrtnr/home.html', content)
