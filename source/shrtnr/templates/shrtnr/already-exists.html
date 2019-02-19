@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <h1>Already Exists</h1>
+    <p>{{ object.url }}</p>
+    
+    <p>Copy this link below</p>
+    <p><a class='btn-link' href='#'>{{ request.get_host }}/{{ object.shortcode }}</a></p>
+    <a class='btn btn-light' href='/'>Make New One</a>
+</div>
+{% endblock content %}

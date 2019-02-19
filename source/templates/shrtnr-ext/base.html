@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Pnpl URL Shrtnr</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/4.3/examples/cover/cover.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: darkslateblue
+    }
+    .btn-link {
+        color: aqua
+    }
+    .btn-link:hover {
+        color: fuchsia
+    }
+    </style>
+</head>
+                  
+
+<body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class='site-wrapper'>
+        <div class='site-wrapper-inner'>
+            <div class='cover-container'>
+                <div class='inner-cover'>
+                    {% load static %}                  
+                    <IMG SRC="{% static 'images/logo.png' %}" ALT="glorious pineapple logo here" WIDTH=128 HEIGHT=128>
+                    {% block content %}
+                    {% endblock content %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

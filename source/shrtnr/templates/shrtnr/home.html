@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class='container'>
+    <div class='row'>
+        <div class='text-center col-sm-12'>
+            <h1>{{ title }}</h1>
+            <div class='col-sm-4 offset-4'>
+                <form method='POST' action='.'> {% csrf_token %}
+                    {{ form.as_p }}
+                    <input class='btn btn-light' type='submit' value='DO IT!' >
+                    
+                </form>
+            </div>
+            <a href='/about'>About</a>
+        </div>
+    </div>
+</div>
+{% endblock content %}

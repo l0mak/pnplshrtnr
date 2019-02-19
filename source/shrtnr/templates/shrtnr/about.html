@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div>
+    <h1>Pnpl Shrtnr... Cthulhu R'lyeh wgah'nagl fhtagn!</h1>
+    <p class='dscrptn'> URL shortener microservice prototype based on Django Framework.</p>
+    <p class='dscrptn'> Django is a free, open source, high-end framework written in Python. 
+        It's also fast, flexible and got unit test framework. 
+        So Django contains all the elements necessary for the realisation of such microservice from the box. </p>
+    <p class='dscrptn'>  </p>
+    <p class='dscrptn'> Pnpl Shrtnr may be used by itself as standalone application or be a part of other one. It consists from database with URLs and shortcodes for them, 
+        few functions (check isn't submitted URL already in db; generate shortcode for given URL; add new URL into db and assign genereted shortcode to it; 
+        redirect to original URL from shortcode etc), few HTML pages to wrap it all in and this 'About' page.</p>
+    <p class='dscrptn'> Right now Pnpl Shrtnr fully copes with his main task. But it can be easily improved by adding new features. 
+        Such as: URL usage stats, make not used for a long time URLs inactive or delete them, create some Django commands for service managment and maintaining,
+        do something in situation when shorcode is incorrect or does not exists, make another shortcode generator with words instead of letters and digits (pnpl.com/LazyNackedGekko)
+        to make redirected links easy to remember or even probably give user a tool to make their own shortcodes.</p>
+    <a class='btn btn-light' href='/'>Home</a>
+</div>
+{% endblock content %}
