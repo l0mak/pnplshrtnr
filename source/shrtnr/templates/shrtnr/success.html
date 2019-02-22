@@ -7,7 +7,7 @@
     <p>{{ object.url }}</p>
 
     <p>Copy this link below</p>
-    <p><a class='btn-link' href='#'>{{ request.get_host }}/{{ object.shortcode }}</a></p>
+    <p><a class='btn-link'>{{ request.get_host }}/{{ object.shortcode }}</a></p>
     <a class='btn btn-light' href='/'>Make New One</a>
 </div>
 {% endblock content %}
